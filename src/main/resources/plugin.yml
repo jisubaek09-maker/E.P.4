@@ -1,0 +1,32 @@
+name: GeoHint
+version: 1.0.0
+main: com.bshs.geohint.GeoHintPlugin
+api-version: "1.21"
+author: bshs-team6
+description: 부산과학고 지구과학실험 - 층서 대비 상대연령/절대연령 수행평가용 플러그인
+
+commands:
+  help:
+    description: 명령어 목록을 보여줍니다
+  hint:
+    description: 절대연령 힌트(반감기/동위원소 비)를 요청합니다 (총 6회)
+  answer:
+    description: 지질 순서 정답을 제출합니다
+  dm:
+    description: 다른 플레이어에게 귓속말을 보냅니다
+    usage: /dm <닉네임> <내용>
+  health:
+    description: 체력을 가득 채웁니다
+  hungry:
+    description: 허기를 가득 채웁니다
+  tools:
+    description: 효율 10 · 파괴불가 네더라이트 삽/곡괭이를 지급합니다
+  geo:
+    description: 관리자용 - 팀(건축물) 등록/관리
+    usage: /geo <setregion|removeregion|list|reload> ...
+    permission: geohint.admin
+
+permissions:
+  geohint.admin:
+    description: GeoHint 관리자 명령어 사용 권한
+    default: op
